@@ -3,7 +3,7 @@ spring:
     username: root
     password: 111111
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/easy_code?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://localhost:3306/ssm?useUnicode=true&characterEncoding=utf-8
     type: com.alibaba.druid.pool.DruidDataSource
     #Spring Boot 默认是不注入这些属性值的，需要自己绑定
     #druid 数据源专有配置
@@ -18,3 +18,6 @@ spring:
     testOnBorrow: false
     testOnReturn: false
     poolPreparedStatements: true
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.wangby.entity

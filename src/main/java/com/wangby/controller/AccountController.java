@@ -41,4 +41,11 @@ public class AccountController {
         return "/index";
     }
 
+    @RequestMapping("/list")
+    public String list() {
+
+        accountService.findAllList();
+        return "account/list";
+    }
+
 }

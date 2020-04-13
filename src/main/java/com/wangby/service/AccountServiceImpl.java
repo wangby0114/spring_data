@@ -21,4 +21,12 @@ public class AccountServiceImpl implements AccountService {
         return result.size() == 0 ? null : result.get(0);
     }
 
+    @Override
+    public List<Account> findAllList() {
+        AccountExample example = new AccountExample();
+        accountDAO.selectByExample(example);
+        return null;
+    }
+
+
 }

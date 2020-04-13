@@ -2,6 +2,7 @@ package com.wangby.dao;
 
 import com.wangby.entity.Account;
 import com.wangby.entity.AccountExample;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**

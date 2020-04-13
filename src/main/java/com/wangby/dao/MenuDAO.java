@@ -2,6 +2,7 @@ package com.wangby.dao;
 
 import com.wangby.entity.Menu;
 import com.wangby.entity.MenuExample;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**

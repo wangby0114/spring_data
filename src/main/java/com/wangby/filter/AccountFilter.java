@@ -26,7 +26,7 @@ public class AccountFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest)servletRequest;
         HttpServletResponse response = (HttpServletResponse)servletResponse;
         String uri = request.getRequestURI();
-        System.out.println(uri);
+        //System.out.println(uri);
 
         boolean pass = canPassIgnore(uri);
         if (pass) {

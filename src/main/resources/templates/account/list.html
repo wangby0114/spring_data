@@ -33,13 +33,13 @@
 
             <ul class="nav navbar-nav">
                 <li class=""><a href="#">公文流转</a></li>
-                <li class="dropdown">
-                    <a href="/account/list" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">
                         人员管理 <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/account/list">用户列表</a></li>
+                        <li class="active"><a href="/account/list">用户列表</a></li>
                         <li><a href="#">Another action</a></li>
                         <li><a href="#">Something else here</a></li>
                         <li role="separator" class="divider"></li>
@@ -88,9 +88,22 @@
 
 <!--  巨幕开始-->
 <div class="jumbotron">
-    <h1>欢迎使用无纸化办公系统</h1>
-    <p>.version 1.0 </p>
-    <p></p>
+    <table class="table table-hover">
+        <tr>
+            <th>序号</th>
+            <th>ID</th>
+            <th>loginName</th>
+            <th>password</th>
+            <th>nickName</th>
+            <th>age</th>
+            <th>location</th>
+            <th>role</th>
+        </tr>
+        <tr th:each="account : ${accAList}">
+            <td></td>
+        </tr>
+    </table>
+
 </div>
 <!--巨幕结束-->
 </body>
